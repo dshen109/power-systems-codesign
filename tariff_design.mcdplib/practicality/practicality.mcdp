@@ -4,5 +4,5 @@ mcdp {
     requires n_tiers_B [dimensionless]
 
     # FILLIN different practicality score
-    required n_tiers_A + required n_tiers_B <= provided tariff_practicality
+    required n_tiers_A + required n_tiers_B >= provided tariff_practicality
 }
