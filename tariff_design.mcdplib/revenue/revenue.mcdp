@@ -1,5 +1,5 @@
 mcdp {
-    provides tariff
+    provides tariff [`tariff]
 
     requires demand_A [MW]
     requires demand_B [MW]
