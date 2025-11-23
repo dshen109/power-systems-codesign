@@ -7,6 +7,7 @@ mcdp {
     annoyance_B = 0.3 [1/$]
 
     # FILLIN approval scoring based on tiers
-    (required revenue_A * annoyance_A + required revenue_B * annoyance_B >=
-        provided customer_approval)
-}
+    (required revenue_A * annoyance_A +
+     required revenue_B * annoyance_B >=
+     provided customer_approval)
+}|
