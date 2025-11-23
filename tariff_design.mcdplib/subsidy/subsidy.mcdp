@@ -13,8 +13,6 @@ mcdp {
     frac_demand_B = demand_B / (demand_A + demand_B)
     frac_demand_A = demand_A / (demand_A + demand_B)
 
-    required xsubsidy_A >= revenue_A - (
-        purchase_cost_A + frac_demand_A * fixed_costs)
-    required xsubsidy_B >= revenue_B - (
-        purchase_cost_B + frac_demand_B * fixed_costs)
+    required xsubsidy_A >= revenue_A - (purchase_cost_A + frac_demand_A * fixed_costs)
+    required xsubsidy_B >= revenue_B - (purchase_cost_B + frac_demand_B * fixed_costs)
 }
