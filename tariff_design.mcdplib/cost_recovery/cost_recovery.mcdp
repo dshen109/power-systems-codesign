@@ -1,10 +1,9 @@
 mcdp {
     provides recovery_rate [dimensionless]
-
-    requires fixed_costs [$]
+    provides market_buy_cost [$]
+    provides fixed_costs [$]
     requires revenue_A [$]
     requires revenue_B [$]
-    requires market_buy_cost [$]
 
-    provided recovery_rate <= (required revenue_A + required revenue_B) / (required market_buy_cost + required fixed_costs)
+    provided recovery_rate * (required market_buy_cost + required fixed_costs) <= (required revenue_A + required revenue_B)
 }
