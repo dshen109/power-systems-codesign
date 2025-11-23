@@ -1,4 +1,4 @@
-mcdp {
+dp {
     provides tariff [`tariff]
 
     requires demand_A [MW]
@@ -7,8 +7,6 @@ mcdp {
     requires revenue_B [$]
 
     # FILLIN Placeholder for cost calculations
-    1 <= required demand_A
-    1 <= required demand_B
-    1 <= required revenue_A
-    1 <= required revenue_B
+    implemented-by yaml resource("revenue.dpc.yml")
+
 }
