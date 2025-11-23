@@ -1,0 +1,14 @@
+mcdp {
+    provides tariff
+
+    requires demand_A [MW]
+    requires demand_B [MW]
+    requires revenue_A [$]
+    requires revenue_B [$]
+
+    # FILLIN Placeholder for cost calculations
+    1 <= required demand_A
+    1 <= required demand_B
+    1 <= required revenue_A
+    1 <= required revenue_B
+}

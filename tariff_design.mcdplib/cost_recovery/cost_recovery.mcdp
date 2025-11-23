@@ -1,0 +1,13 @@
+mcdp {
+    provides recovery_rate [dimensionless]
+    provides fixed_costs [$]
+
+    requires revenue_A [$]
+    requires revenue_B [$]
+    requires market_buy_cost [$]
+
+    provided recovery rate <= (
+        (required revenue_A + required revenue_B) /
+        (required market_buy_cost + fixed_costs)
+    )
+}

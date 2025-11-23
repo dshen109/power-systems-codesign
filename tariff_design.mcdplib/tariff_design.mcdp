@@ -1,0 +1,31 @@
+mcdp {
+    provides cost_approval [dimensionless]
+    provides practicality [dimensionless]
+    provides cost_recovery [$]
+
+    requires cross_subsidy_A [$]
+    requires cross_subsidy_B [$]
+
+    revenue = instance `revenue
+    practicality = instance `practicality
+    approval = instance `approval
+    utility_cost = instance `utility_cost
+    subsidy = instance `subsidy
+    tariff_structure = instance `tariff_structure
+    cost_recovery = instance `cost_recovery
+
+    # revenue block
+
+    # practicality block
+
+    # approval block
+
+    # utility_cost block
+
+    # subsidy block
+
+    # tariff_structure block
+
+    # cost_recovery block
+
+}

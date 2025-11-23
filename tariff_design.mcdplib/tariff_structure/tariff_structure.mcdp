@@ -1,0 +1,9 @@
+dp {
+    provides n_tiers_A [Nat]
+    provides n_tiers_B [Nat]
+
+    requires tariff [`tariff]
+
+    implemented-by yaml resource("tariff_structure.dpc.yml")
+
+}
