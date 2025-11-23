@@ -1,11 +1,11 @@
 mcdp {
-    requires cross_subsidy_A [$]
-    requires_cross_subsidy_B [$]
+    requires xsubsidy_A [$]
+    requires xsubsidy_B [$]
 
     provides revenue_A [$]
     provides revenue_B [$]
-    provides market_purchase_cost_A [$]
-    provides market_purchase_cost_B [$]
+    provides purchase_cost_A [$]
+    provides purchase_cost_B [$]
     provides fixed_costs [$]
     provides demand_A [MW]
     provides demand_B [MW]
@@ -13,8 +13,8 @@ mcdp {
     frac_demand_B = demand_B / (demand_A + demand_B)
     frac_demand_A = demand_A / (demand_A + demand_B)
 
-    required cross_subsidy_A >= revenue_A - (
-        market_purchase_cost_A + frac_demand_A * fixed_costs)
-    required cross_subsidy_B >= revenue_B - (
-        market_purchase_cost_B + frac_demand_B * fixed_costs)
+    required xsubsidy_A >= revenue_A - (
+        purchase_cost_A + frac_demand_A * fixed_costs)
+    required xsubsidy_B >= revenue_B - (
+        purchase_cost_B + frac_demand_B * fixed_costs)
 }

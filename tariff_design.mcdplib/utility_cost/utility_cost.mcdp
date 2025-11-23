@@ -1,13 +1,13 @@
 mcdp {
     provides demand_A [MW]
     provides demand_B [MW]
-    requires market_purchase_cost_A [$]
-    requires market_purchase_cost_B [$]
+    requires purchase_cost_A [$]
+    requires purchase_cost_B [$]
 
     price_A = 1 [$/MW]
     price_B = 1 [$/MW]
 
     # FILLIN Placeholder for market price calculations.
-    required market_purchase_cost_A >= demand_A * price_A
-    required market_purchase_cost_B >= demand_B * price_B
+    required purchase_cost_A >= demand_A * price_A
+    required purchase_cost_B >= demand_B * price_B
 }
