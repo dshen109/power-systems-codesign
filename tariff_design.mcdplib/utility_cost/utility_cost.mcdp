@@ -8,6 +8,6 @@ mcdp {
     price_B = 1 [$/MW]
 
     # FILLIN Placeholder for market price calculations.
-    required purchase_cost_A >= demand_A * price_A
-    required purchase_cost_B >= demand_B * price_B
+    required purchase_cost_A >= provided demand_A * price_A
+    required purchase_cost_B >= provided demand_B * price_B
 }
