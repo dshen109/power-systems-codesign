@@ -5,5 +5,5 @@ mcdp {
     requires revenue_A [$]
     requires revenue_B [$]
 
-    provided recovery_rate * (required market_buy_cost + required fixed_costs) <= (required revenue_A + required revenue_B)
+    provided recovery_rate * (provided market_buy_cost + provided fixed_costs) <= (required revenue_A + required revenue_B)
 }
