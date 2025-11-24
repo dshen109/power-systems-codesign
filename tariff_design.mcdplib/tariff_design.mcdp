@@ -9,7 +9,7 @@ mcdp {
     revenue = instance `revenue
     practicality = instance `practicality
     approval = instance `approval
-    utility_cost = instance `utility_cost
+    tariff_eval = instance `tariff_eval
     subsidy = instance `subsidy
     tariff_structure = instance `tariff_structure
     cost_recovery = instance `cost_recovery
@@ -20,7 +20,7 @@ mcdp {
 
     # approval block
 
-    # utility_cost block
+    # tariff_eval block
 
     # subsidy block
 

@@ -1,18 +1,15 @@
 mcdp {
-    requires xsubsidy_A [$]
-    requires xsubsidy_B [$]
-
     provides revenue_A [$]
     provides revenue_B [$]
     provides purchase_cost_A [$]
     provides purchase_cost_B [$]
+    provides fixed_cost_fracA [dimensionless]
+    provides fixed_cost_fracB [dimensionless]
     provides fixed_costs [$]
-    provides demand_A [MW]
-    provides demand_B [MW]
 
-    frac_demand_B = demand_B / (demand_A + demand_B)
-    frac_demand_A = demand_A / (demand_A + demand_B)
+    requires xsubsidy_A [$]
+    requires xsubsidy_B [$]
 
-    required xsubsidy_A >= revenue_A - (purchase_cost_A + frac_demand_A * fixed_costs)
-    required xsubsidy_B >= revenue_B - (purchase_cost_B + frac_demand_B * fixed_costs)
+    required xsubsidy_A >= provided revenue_A - (provided purchase_cost_A + provided fixed_cost_fracA * provided fixed_costs)
+    required xsubsidy_B >= provided revenue_B - (provided purchase_cost_B + provided fixed_cost_fracB * provided fixed_costs)
 }
