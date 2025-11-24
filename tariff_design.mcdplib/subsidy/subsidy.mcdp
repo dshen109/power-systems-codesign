@@ -3,8 +3,8 @@ mcdp {
     provides revenue_B [$]
     provides purchase_cost_A [$]
     provides purchase_cost_B [$]
-    provides fixed_cost_fracA [dimensionless]
-    provides fixed_cost_fracB [dimensionless]
+    provides fixed_cost_fracA [Real]
+    provides fixed_cost_fracB [Real]
     provides fixed_costs [$]
 
     requires xsubsidy_A [$]
