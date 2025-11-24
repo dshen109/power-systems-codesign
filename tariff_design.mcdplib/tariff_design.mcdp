@@ -39,8 +39,6 @@ mcdp {
     # cost_recovery block
     provided recovery_rate <= recovery_rate provided by cost_recovery
 
-
-
     # tariff_structure block
     # all defined above
 }
