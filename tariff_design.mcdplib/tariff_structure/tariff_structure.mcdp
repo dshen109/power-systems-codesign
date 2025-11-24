@@ -4,6 +4,5 @@ dp {
 
     requires tariff [`tariff]
 
-    implemented-by yaml resource("tariff_structure.dpc.yml")
-
+    implemented-by yaml resource("tariff_structure.dpc.yaml")
 }

@@ -9,5 +9,5 @@ dp {
     requires revenue_B [$]
     # Total cost of purchasing energy on the market to serve A and B...
 
-    implemented-by yaml resource("tariff_eval.dpc.yml")
+    implemented-by yaml resource("tariff_eval.dpc.yaml")
 }
