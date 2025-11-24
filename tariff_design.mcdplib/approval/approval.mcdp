@@ -2,7 +2,7 @@ mcdp {
     provides revenue_A [$]
     provides revenue_B [$]
 
-    required customer_approval [dimensionless]
+    requires customer_approval [dimensionless]
 
     annoyance_A = 0.3 [1/$]
     annoyance_B = 0.3 [1/$]
