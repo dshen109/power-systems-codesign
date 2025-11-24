@@ -6,11 +6,10 @@ mcdp {
     requires xsubsidy_A [$]
     requires xsubsidy_B [$]
 
-    tariff_eval = instance `tariff_eval
     practicality = instance `practicality
     approval = instance `approval
-    tariff_eval = instance `tariff_eval
     subsidy = instance `subsidy
+    tariff_eval = instance `tariff_eval
     tariff_structure = instance `tariff_structure
     cost_recovery = instance `cost_recovery
 
@@ -23,7 +22,7 @@ mcdp {
     n_tiers_B required by practicality <= n_tiers_B provided by tariff_structure
 
     # approval block
-    customer_approval <= customer_approval required by approval
+    provided customer_approval <= customer_approval required by approval
     revenue_A provided by approval >= revenue_A required by tariff_eval
     revenue_B provided by approval >= revenue_B required by tariff_eval
 
