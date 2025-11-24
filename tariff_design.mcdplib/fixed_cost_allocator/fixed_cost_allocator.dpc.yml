@@ -1,18 +1,12 @@
 F:
   - '`tariff'
 R:
-  - MW
-  - MW
-  - $
-  - $
   - dimensionless
   - dimensionless
-  - $
 implementations:
   T1:
     f_max:
-      - 1
-      - 1
+      - '`tariff: 0101010101_10_0202020202_20'
     r_min:
-      - '`tariff: A1111_0_B1111_0'
-      - '`tariff: A1111_0_B1111_0'
+      - 0.1
+      - 0.1
