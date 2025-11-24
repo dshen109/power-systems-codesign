@@ -1,4 +1,5 @@
 dp {
+    # TODO: Delete once we confirm that we don't need this, superseded by tariff_eval
     provides tariff [`tariff]
 
     requires demand_A [MW]
@@ -8,5 +9,4 @@ dp {
 
     # FILLIN Placeholder for cost calculations
     implemented-by yaml resource("revenue.dpc.yml")
-
 }

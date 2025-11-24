@@ -1,12 +1,12 @@
 mcdp {
-    provides cost_approval [dimensionless]
-    provides practicality [dimensionless]
-    provides cost_recovery [$]
+    provides customer_approval [dimensionless]
+    provides tariff_practicality [dimensionless]
+    provides recovery_rate [dimensionless]
 
-    requires cross_subsidy_A [$]
-    requires cross_subsidy_B [$]
+    requires xsubsidy_A [$]
+    requires xsubsidy_B [$]
 
-    revenue = instance `revenue
+    tariff_eval = instance `tariff_eval
     practicality = instance `practicality
     approval = instance `approval
     tariff_eval = instance `tariff_eval
@@ -14,18 +14,34 @@ mcdp {
     tariff_structure = instance `tariff_structure
     cost_recovery = instance `cost_recovery
 
-    # revenue block
+    # tariff_eval block
+    tariff provided by tariff_eval >= tariff required by tariff_structure
 
     # practicality block
+    provided tariff_practicality <= tariff_practicality provided by practicality
+    n_tiers_A required by practicality <= n_tiers_A provided by tariff_structure
+    n_tiers_B required by practicality <= n_tiers_B provided by tariff_structure
 
     # approval block
+    customer_approval <= customer_approval required by approval
+    revenue_A provided by approval >= revenue_A required by tariff_eval
+    revenue_B provided by approval >= revenue_B required by tariff_eval
 
     # tariff_eval block
+    purchase_cost_A required by tarrif_eval <= purchase_cost_A provided by subsidy
+    purchase_cost_B required by tarrif_eval <= purchase_cost_B provided by subsidy
+    revenue_A required by tarrif_eval <= revenue_A provided by subsidy
+    revenue_B required by tarrif_eval <= revenue_B provided by subsidy
 
     # subsidy block
-
-    # tariff_structure block
+    xsubsidy_A required by subsidy <= required xsubsidy_A
+    xsubsidy_B required by subsidy <= required xsubsidy_B
 
     # cost_recovery block
+    provided recovery_rate <= recovery_rate provided by cost_recovery
 
+
+
+    # tariff_structure block
+    # all defined above
 }
