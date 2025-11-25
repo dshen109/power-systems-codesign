@@ -3,10 +3,10 @@ dp {
     # revenue from the customers
     provides tariff [`tariff]
 
-    requires purchase_cost_A [$]
-    requires purchase_cost_B [$]
-    requires revenue_A [$]
-    requires revenue_B [$]
+    requires purchase_cost_A [USD]
+    requires purchase_cost_B [USD]
+    requires revenue_A [USD]
+    requires revenue_B [USD]
     requires fixed_cost_fracA [dimensionless]
     requires fixed_cost_fracB [dimensionless]
 

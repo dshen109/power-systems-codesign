@@ -1,10 +1,10 @@
 F:
 - '`tariff'
 R:
-- $
-- $
-- $
-- $
+- USD
+- USD
+- USD
+- USD
 - dimensionless
 - dimensionless
 implementations:
@@ -12,9 +12,9 @@ implementations:
     f_max:
     - '`tariff: a0101010101_10_b0202020202_20'
     r_min:
-    - 1 $
-    - 1 $
-    - 1 $
-    - 1 $
+    - 1 USD
+    - 1 USD
+    - 1 USD
+    - 1 USD
     - 0.1 dimensionless
     - 0.1 dimensionless
