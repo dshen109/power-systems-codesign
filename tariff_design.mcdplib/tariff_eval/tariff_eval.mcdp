@@ -7,7 +7,8 @@ dp {
     requires purchase_cost_B [$]
     requires revenue_A [$]
     requires revenue_B [$]
-    # Total cost of purchasing energy on the market to serve A and B...
+    requires fixed_cost_fracA [dimensionless]
+    requires fixed_cost_fracB [dimensionless]
 
     implemented-by yaml resource("tariff_eval.dpc.yaml")
 }

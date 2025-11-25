@@ -12,7 +12,7 @@ mcdp {
     tariff_eval = instance `tariff_eval
     tariff_structure = instance `tariff_structure
     cost_recovery = instance `cost_recovery
-    fixed_cost_allocator = instance `fixed_cost_allocator
+    # fixed_cost_allocator = instance `fixed_cost_allocator
 
     # tariff_eval block
     tariff provided by tariff_eval >= tariff required by tariff_structure

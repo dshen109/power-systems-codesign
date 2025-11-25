@@ -5,3 +5,16 @@ R:
   - $
   - $
   - $
+  - dimensionless
+  - dimensionless
+implementations:
+  0101010101_10_0202020202_20:
+    f_max:
+      - '`tariff: 0101010101_10_0202020202_20'
+    r_min:
+      - 1
+      - 1
+      - 1
+      - 1.0
+      - 0.1
+      - 0.1
