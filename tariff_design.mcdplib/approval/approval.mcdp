@@ -4,8 +4,8 @@ mcdp {
 
     requires customer_approval [dimensionless]
 
-    annoyance_A = 0.3 [1/$]
-    annoyance_B = 0.3 [1/$]
+    constant annoyance_A = 0.3 [1/$]
+    constant annoyance_B = 0.3 [1/$]
 
     # FILLIN approval scoring based on tiers
     provided revenue_A * annoyance_A + provided revenue_B * annoyance_B <= required customer_approval
