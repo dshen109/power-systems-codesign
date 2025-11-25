@@ -1,16 +1,16 @@
 F:
-  - '`tariff'
+- '`tariff'
 R:
-  - $
-  - $
-  - $
-  - $
-  - dimensionless
-  - dimensionless
+- $
+- $
+- $
+- $
+- dimensionless
+- dimensionless
 implementations:
-  0101010101_10_0202020202_20:
+  a0101010101_10_b0202020202_20:
     f_max:
-    - '`tariff: 0101010101_10_0202020202_20'
+    - '`tariff: a0101010101_10_b0202020202_20'
     r_min:
     - 1 $
     - 1 $
