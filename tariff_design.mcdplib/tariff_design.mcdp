@@ -23,9 +23,9 @@ mcdp {
     n_tiers_B required by practicality <= n_tiers_B provided by tariff_structure
 
     # approval block
-    provided customer_approval <= customer_approval required by approval
-    revenue_A provided by approval >= revenue_A required by tariff_eval
-    revenue_B provided by approval >= revenue_B required by tariff_eval
+    provided customer_approval <= customer_approval provided by approval
+    revenue_A required by approval <= revenue_A required by tariff_eval
+    revenue_B required by approval <= revenue_B required by tariff_eval
 
     # tariff_eval block
     purchase_cost_A required by tarrif_eval <= purchase_cost_A provided by subsidy
