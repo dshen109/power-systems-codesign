@@ -1,8 +1,0 @@
-mcdp {
-    provides tariff_practicality [dimensionless]
-    requires n_tiers_A [dimensionless]
-    requires n_tiers_B [dimensionless]
-
-    # FILLIN different practicality score, maybe.
-    required n_tiers_A + required n_tiers_B >= provided tariff_practicality
-}

@@ -1,11 +1,11 @@
 mcdp {
     provides recovery_rate [dimensionless]
-    provides purchase_cost_A [USD]
-    provides purchase_cost_B [USD]
-    provides fixed_costs [USD]
+    provides cost_energy_A [USD]
+    provides cost_energy_B [USD]
+    provides cost_fixed [USD]
 
     requires revenue_A [USD]
     requires revenue_B [USD]
 
-    provided recovery_rate * (provided purchase_cost_A + provided purchase_cost_B + provided fixed_costs) <= (required revenue_A + required revenue_B)
+    provided recovery_rate * (provided cost_energy_A + provided cost_energy_B + provided cost_fixed) <= (required revenue_A + required revenue_B)
 }

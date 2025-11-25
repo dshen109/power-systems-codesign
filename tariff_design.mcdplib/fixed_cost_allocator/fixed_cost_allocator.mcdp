@@ -1,8 +1,0 @@
-dp {
-    provides tariff [`tariff]
-
-    requires fixed_cost_fracA [dimensionless]
-    requires fixed_cost_fracB [dimensionless]
-
-    implemented by yaml resource("fixed_cost_allocator.dpc.yaml")
-}
