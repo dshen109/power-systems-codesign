@@ -3,6 +3,7 @@ mcdp {
     provides purchase_cost_A [$]
     provides purchase_cost_B [$]
     provides fixed_costs [$]
+    
     requires revenue_A [$]
     requires revenue_B [$]
 

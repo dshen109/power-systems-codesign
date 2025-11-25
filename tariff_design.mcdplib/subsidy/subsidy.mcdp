@@ -1,11 +1,10 @@
 mcdp {
-    requires  revenue [$]
+    provides revenue [$]
 
-    provides xsubsidy [$]
-    provides purchase_cost [$]
-    provides fixed_cost_frac [dimensionless]
-    provides fixed_costs [$]
+    required xsubsidy [$]
+    required purchase_cost [$]
+    required fixed_cost_frac [dimensionless]
+    required fixed_costs [$]
 
-
-    provided xsubsidy + provided purchase_cost + provided fixed_cost_frac * provided fixed_costs <= required revenue
+    required xsubsidy + required purchase_cost + required fixed_cost_frac * required fixed_costs <= provided revenue
 }

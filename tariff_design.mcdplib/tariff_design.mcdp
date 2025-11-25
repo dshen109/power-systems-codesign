@@ -28,14 +28,9 @@ mcdp {
     revenue_B required by approval <= revenue_B required by tariff_eval
 
     # tariff_eval block
-    purchase_cost_A required by tarrif_eval <= purchase_cost_A provided by subsidy
-    purchase_cost_B required by tarrif_eval <= purchase_cost_B provided by subsidy
-    revenue_A required by tarrif_eval <= revenue_A provided by subsidy
-    revenue_B required by tarrif_eval <= revenue_B provided by subsidy
 
     # subsidy block
-    xsubsidy_A required by subsidy <= required xsubsidy_A
-    xsubsidy_B required by subsidy <= required xsubsidy_B
+
 
     # cost_recovery block
     provided recovery_rate <= recovery_rate provided by cost_recovery
