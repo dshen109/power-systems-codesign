@@ -6,7 +6,7 @@ mcdp {
 
     requires complexity [dimensionless]
 
-    perception = instance `perception
+    # perception = instance `perception
     cost_recovery = instance `cost_recovery
     billing = instance `billing
     tariff_menu = instance `tariff_menu
@@ -14,9 +14,9 @@ mcdp {
     practicality = instance `practicality
 
     # perception block
-    revenue_A required by perception <= revenue_A provided by billing
-    revenue_B required by perception <= revenue_B provided by billing
-    provided disapproval <= disapproval provided by perception
+    # revenue_A required by perception <= revenue_A provided by billing
+    # revenue_B required by perception <= revenue_B provided by billing
+    # provided disapproval <= disapproval provided by perception
 
     # tariff_menu block
     tariff provided by tariff_menu >= tariff required by billing
