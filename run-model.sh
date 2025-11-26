@@ -1,0 +1,1 @@
+rm -r out-query && mcdp-solve-query tariff_query_fun

@@ -2,7 +2,7 @@ mcdp {
     provides recovery_rate [dimensionless]
     provides fixed_costs [USD]
     provides xsubsidy [USD]
-    provides disapproval [dimensionless]
+    # provides disapproval [dimensionless]
 
     requires complexity [dimensionless]
 

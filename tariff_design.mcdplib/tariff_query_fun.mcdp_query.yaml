@@ -7,7 +7,6 @@ query:
     recovery_rate: 0.001 dimensionless
     fixed_costs: 10 USD
     xsubsidy: 10 USD
-    disapproval: 1 dimensionless
   max_r:
     complexity: 10000 dimensionless
   optimize_for:
